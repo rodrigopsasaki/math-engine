@@ -1,4 +1,4 @@
-package br.com.rodrigosasaki.math.tests;
+package br.com.rodrigosasaki.math;
 
 import org.junit.Test;
 

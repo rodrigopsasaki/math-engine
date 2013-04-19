@@ -10,7 +10,7 @@ public class Main{
 
 	public static void main(String[] args) throws UnparseableExpressionException{
 		if (args.length == 0 || args.length > 1){
-			System.out.println("Usage: java -jar mathengine.jar \"<expression>\"");
+			System.out.println("Usage: java -jar math-engine.jar \"<expression>\"");
 		}else{
 			System.out.println(format(Engine.evaluate(args[0])));
 		}
