@@ -15,7 +15,7 @@ public class Engine{
 	
 	public static double evaluate(String expression) throws UnparseableExpressionException{
 		try{
-			Queue<String> rpnExpression = ReversePolishNotation.toRPN(tokenize(expression));
+			Queue<String> rpnExpression = SimplifiedShuntingYard.toRPN(tokenize(expression));
 			return Evaluator.evaluate(rpnExpression);
 		}catch(UnsupportedOperatorException e){
 			throw new UnparseableExpressionException("Could not evaluate expression.", e);

@@ -8,8 +8,13 @@ import br.com.rodrigosasaki.structures.stack.Stack;
 
 /**
  * @author Rodrigo Sasaki
+ * 
+ * Class responsible for converting an infix expression into Reverse Polish Notation
+ * using a simplified version of the Shunting-Yard algorithm.
+ * 
+ * It does not support commas or functions.
  */
-public class ReversePolishNotation{
+public class SimplifiedShuntingYard{
 
 	public static Queue<String> toRPN(List<String> tokens) throws UnparseableExpressionException{
 		Queue<String> output = new Queue<String>();
