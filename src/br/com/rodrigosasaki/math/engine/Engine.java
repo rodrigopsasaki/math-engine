@@ -25,10 +25,6 @@ public class Engine{
 		}
 	}
 	
-	public static void main(String[] args){
-		System.out.println(tokenize("5/.2"));
-	}
-
 	private static List<String> tokenize(String expression){
 		List<String> elements = new List<String>();
 		Pattern pattern = Pattern.compile("\\d+\\.?\\d*|\\.\\d+|[%+-/()^*]");
